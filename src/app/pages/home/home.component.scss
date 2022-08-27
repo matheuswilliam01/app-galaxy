@@ -12,6 +12,9 @@
         width: 500px;
         line-height: 60px;
         text-align: center;
+        animation: textmove;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
     }
 }
 
@@ -55,6 +58,20 @@
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+
+@keyframes textmove {
+    0% {
+        transform: translateY(-80px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-80px);
+    }
 }
 
 @keyframes gravidade {
